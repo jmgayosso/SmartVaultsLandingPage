@@ -7,25 +7,49 @@ export const KeyAgencyFAQ = () => {
 
   const faqs = [
     {
-      question: "¿Qué es un Key Agent?",
-      answer: "Un Key Agent es un asesor profesional especializado en Bitcoin que ayuda a los usuarios a configurar y gestionar sus vaults de forma segura, proporcionando orientación experta en custodia y herencia."
+      question: "Why would I want to be a key agent?",
+      answer: "Key agency is a service that can be monetized, either charging by signature or as a percentage of the assets being collaboratively held. Smart Vaults makes it easy for key agents to specify and execute their offerings."
     },
     {
-      question: "¿Cómo puedo convertirme en Key Agent certificado?",
-      answer: "Para convertirte en Key Agent certificado, debes completar nuestro programa de formación, demostrar conocimientos técnicos en Bitcoin y miniscript, y aprobar nuestros exámenes de certificación."
+      question: "Who should be a key agent?",
+      answer: "Key agents may be institutions, community leaders, financial advisors, or security enthusiasts."
     },
     {
-      question: "¿Qué servicios puedo ofrecer como Key Agent?",
-      answer: "Como Key Agent puedes ofrecer servicios de configuración de vaults, asesoría en herencia de Bitcoin, gestión colaborativa de custodia, y soporte técnico especializado para empresas y individuos."
+      question: "How difficult is it to be a key agent?",
+      answer: "The most important elements of key agency are reputation and security. Your clients must trust you to serve as a cosigner in alignment to your terms. You must secure the private key. Smart Vaults supports flexible configurations for Coldcard, iOS hot wallet, desktop, cloud-based, or proprietary/undisclosed signer technology."
     },
     {
-      question: "¿Cuáles son los beneficios de trabajar con Smart Vaults?",
-      answer: "Trabajar con Smart Vaults te permite acceder a herramientas avanzadas, una plataforma robusta, soporte continuo, y la oportunidad de formar parte de una red global de expertos en Bitcoin."
+      question: "What is an example offering?",
+      answer: "TA key agent could offer per signature fee of $150 that includes a videoconference verification before the agent signs the transaction. Additionally, the key agent could charge 0.2% per year on the bitcoin held in the vault. Smart Vaults supports a special transaction type that auto-calculates the fees for the key agent and orchestrates the proposals, optimizing for low-chain-fee time periods."
     },
     {
-      question: "¿Cómo se maneja la seguridad y privacidad?",
-      answer: "Smart Vaults utiliza miniscript de Bitcoin para garantizar la máxima seguridad. Los Key Agents no tienen acceso a las claves privadas de los usuarios, manteniendo la autosoberanía completa."
-    }
+      question: "Is a key agent a custodian?",
+      answer: "A key agent does not have full control over any client’s bitcoin. Vault builders should carefully select the key agents to diversify across organizations, jurisdictions, technology types, and other criteria appropriate for the situation."
+    },
+    {
+      question: "Who are the key agents available on Smart Vaults?",
+      answer: "Smart Vaults supports community key agents and verified key agents. Verified key agents have performed KYC checks and have been vetted for security by Smart Vaults. Users are always encouraged to know their key agents, do their own due diligence, and make wise choices. Smart Vaults is not responsible for key agent performance."
+    },
+    {
+      question: "What do I need to be a key agent?",
+      answer: "Decide your offerings. If you want to support long term storage of bitcoin, we recommend getting a Coldcard and charging for your service in basis points of the bitcoin per year. If you want to support shorter-term, faster moving bitcoin, you could use our mobile app as the signer and charge an amount per signature. Or both offerings. Smart Vaults also supports flat rates per year and allows you to charge in USD or sats."
+    },
+    {
+      question: "How can key agents communicate with users?",
+      answer: "Vault participants can communicate in-app via encrypted chat, including invited non-key holder watchers."
+    },
+    {
+      question: "How is my privacy protected as a key agent?",
+      answer: "Key agents may share whatever level of detail they wish on their public profile and key offerings, including price. They may provide contact information and social links. All fields are optional to support anonymous key agents. Once part of a vault, all vault metadata, proposals, and communications are end-to-end encrypted."
+    },
+    {
+      question: "Can I self-host Smart Vaults for my community of users?",
+      answer: "Yes, you can run the Smart Vaults desktop app with a Nostr relay and Bitcoin node."
+    },
+    {
+      question: "How can I become a Smart Vaults Verified key agent?",
+      answer: "Contact us at info@smartvaults.io"
+    },
   ];
 
   const toggleFAQ = (index: number) => {
@@ -74,13 +98,12 @@ export const KeyAgencyFAQ = () => {
 
         <div className="text-center mt-12">
           <p className="text-gray-600 mb-4">
-            ¿Tienes más preguntas sobre el programa Key Agency?
-          </p>
+            Do you have more questions about the Key Agency program?</p>
           <a 
             href="mailto:info@smartvaults.io" 
             className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200"
           >
-            Contáctanos
+            Contact Us
           </a>
         </div>
       </div>

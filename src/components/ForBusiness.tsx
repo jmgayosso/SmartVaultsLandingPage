@@ -21,8 +21,17 @@ export const ForBusiness = () => {
             <p className="text-gray-700 mb-6 lg:mb-8 leading-relaxed text-sm lg:text-base">
               Businesses can capture their business rules into vaults and leverage our mobile application. Smart Vaults also offers institutional co-management.
             </p>
-            <Button className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-6 lg:px-8 py-2 lg:py-3 rounded-lg text-base lg:text-lg">
-              Contact us for more information
+            <Button
+              className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-6 lg:px-8 py-2 lg:py-3 rounded-lg text-base lg:text-lg"
+              asChild
+            >
+              <a
+                href="mailto:info@smartvaults.io?subject=Getting%20in%20Touch%20Regarding%20Smart%20Vaults"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Contact us for more information
+              </a>
             </Button>
           </div>
         </div>
