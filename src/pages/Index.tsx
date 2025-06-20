@@ -30,7 +30,7 @@ const Index = () => {
       <section id="key-agents">
         <KeyAgents />
       </section>
-      <RecentPosts />
+      {/* <RecentPosts /> */}
       <section id="faq">
         <KeyAgencyFAQ />
       </section>

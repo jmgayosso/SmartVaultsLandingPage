@@ -10,7 +10,7 @@ interface MobileScreenshotSlideshowProps {
 
 export const MobileScreenshotSlideshow: React.FC<MobileScreenshotSlideshowProps> = ({
   images,
-  autoPlayInterval = 4000,
+  autoPlayInterval = 6000,
   className = ""
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);

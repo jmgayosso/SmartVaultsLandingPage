@@ -7,7 +7,11 @@ import { MobileScreenshotSlideshow } from "./MobileScreenshotSlideshow";
 export const Hero = () => {
   // Array de capturas de pantalla de la aplicación móvil
   const mobileScreenshots = [
-    "/lovable-uploads/44e4851f-2e33-48c4-bb3e-7e3cc99c9492.png",
+    "/images/screenSV1.png",
+    "/images/screenSV2.png",
+    "/images/screenSV3.png",
+    "/images/screenSV4.png",
+    "/images/screenSV5.png",
     // Puedes agregar más capturas de pantalla aquí
     // "/path/to/screenshot2.png",
     // "/path/to/screenshot3.png",
@@ -50,7 +54,7 @@ export const Hero = () => {
           </div>
 
           <div className="text-center lg:text-left">
-            <a href="#" className="text-blue-300 hover:text-blue-200 underline text-base lg:text-lg drop-shadow-sm">
+            <a href="https://testflight.apple.com/join/1CFTiTXh" target="_blank" className="text-blue-300 hover:text-blue-200 underline text-base lg:text-lg drop-shadow-sm">
               Try out the beta version, testnet mode available.
             </a>
           </div>
@@ -58,10 +62,11 @@ export const Hero = () => {
 
         {/* Mobile Screenshots Slideshow */}
         <div className="flex justify-center lg:justify-end order-1 lg:order-2">
-          <div className="w-64 sm:w-72 lg:w-80">
+          <div className="w-74 sm:w-80 lg:w-90">
+          {/* <div className="w-64 sm:w-72 lg:w-80"> */}
             <MobileScreenshotSlideshow 
               images={mobileScreenshots}
-              autoPlayInterval={5000}
+              autoPlayInterval={6000}
               className="h-auto"
             />
           </div>

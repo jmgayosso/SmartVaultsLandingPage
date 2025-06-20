@@ -14,43 +14,7 @@ export const Collaborative = () => {
           </div>
 
           {/* Collaborative network visualization */}
-          <div className="flex justify-center">
-            <div className="relative w-96 h-96">
-              {/* Central Smart Vaults logo */}
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center z-10">
-                <span className="text-white font-bold text-xs">SV</span>
-              </div>
-              
-              {/* User avatars in circle */}
-              {[0, 1, 2, 3, 4, 5].map((i) => {
-                const angle = (i * 60) * Math.PI / 180;
-                const x = Math.cos(angle) * 120;
-                const y = Math.sin(angle) * 120;
-                return (
-                  <div
-                    key={i}
-                    className="absolute w-12 h-12 bg-gradient-to-br from-purple-400 to-blue-500 rounded-full transform -translate-x-1/2 -translate-y-1/2"
-                    style={{
-                      left: `calc(50% + ${x}px)`,
-                      top: `calc(50% + ${y}px)`
-                    }}
-                  >
-                    {/* Dotted line to center */}
-                    <div
-                      className="absolute border-dotted border-blue-400 border-t-2 origin-left"
-                      style={{
-                        width: '120px',
-                        left: '50%',
-                        top: '50%',
-                        transform: `rotate(${angle + Math.PI}rad)`,
-                        transformOrigin: '0 0'
-                      }}
-                    />
-                  </div>
-                );
-              })}
-            </div>
-          </div>
+          <img src="/public/images/graph.png" alt="Collaborative Network" className="w-full h-auto" />
         </div>
 
         {/* Mobile mockups */}
@@ -64,18 +28,22 @@ export const Collaborative = () => {
           
           <div className="flex justify-center gap-8 overflow-x-auto pb-4">
             {[
-              { title: "Create a Smart Vault", subtitle: "set flexible spending rules easily" },
-              { title: "Choose a Vault type", subtitle: "and pick a template or create your own" },
-              { title: "Set up Collaborative custody", subtitle: "for higher security, it allows to add as many contacts you want" },
-              { title: "Contacts", subtitle: "manage your contacts" }
+              { screenShot: '/public/images/screenSV1.png', title: "Create a Smart Vault", subtitle: "Set flexible spending rules easily" },
+              { screenShot: '/public/images/screenSV2.png', title: "Choose a Vault type", subtitle: "Pick a template or create your own" },
+              { screenShot: '/public/images/screenSV3.png', title: "Set up Collaborative custody", subtitle: "For higher security, it allows to add as many contacts you want" },
+              { screenShot: '/public/images/screenSV5.png', title: "Contacts", subtitle: "Manage your contacts" }
             ].map((screen, index) => (
               <div key={index} className="flex-shrink-0 w-48">
-                <div className="bg-black rounded-3xl p-4 h-96 mb-4 border border-gray-700">
-                  <div className="text-white text-center h-full flex flex-col justify-center">
-                    <div className="mb-4">📱</div>
-                    <h4 className="font-bold text-sm mb-2">{screen.title}</h4>
-                    <p className="text-xs text-gray-400">{screen.subtitle}</p>
-                  </div>
+                <div className="rounded-3xl h-96 mb-4 border border-gray-700 flex flex-col items-center overflow-hidden bg-transparent p-0">
+                  <img
+                    src={screen.screenShot}
+                    alt={screen.title}
+                    className="w-full h-full object-cover rounded-3xl"
+                  />
+                </div>
+                <div className="text-white text-center flex-1 flex flex-col justify-center">
+                  <h4 className="font-bold text-sm mb-2">{screen.title}</h4>
+                  <p className="text-xs text-gray-400">{screen.subtitle}</p>
                 </div>
               </div>
             ))}
