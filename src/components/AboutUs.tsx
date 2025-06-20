@@ -12,12 +12,17 @@ export const AboutUs = () => {
         </p>
 
         {/* Team photo placeholder */}
-        <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl h-64 mb-12 flex items-center justify-center">
-          <span className="text-white text-xl font-bold">Smart Vaults Team</span>
+        <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl h-100 mb-12 flex items-center justify-center">
+          {/* <span className="text-white text-xl font-bold">Smart Vaults Team</span> */}
+          <img 
+            src="/public/images/team.avif" 
+            alt="Smart Vaults Team" 
+            className="w-full h-full object-cover rounded-2xl"
+          />
         </div>
 
         {/* Newsletter signup */}
-        <div className="bg-white rounded-2xl p-8 max-w-md mx-auto">
+        {/* <div className="bg-white rounded-2xl p-8 max-w-md mx-auto">
           <h3 className="text-2xl font-bold text-blue-600 mb-4">Join the Waiting List</h3>
           <p className="text-gray-700 mb-6">Enter your email below to join the waiting list.</p>
           <div className="space-y-4">
@@ -30,7 +35,7 @@ export const AboutUs = () => {
               Sign up
             </Button>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
