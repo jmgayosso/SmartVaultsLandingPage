@@ -14,7 +14,8 @@ export default defineConfig(({ mode }) => ({
     mode === 'development' &&
     componentTagger(),
   ].filter(Boolean),
-  base: mode === 'development' ? '/' : '/SmartVaultsLandingPage/',
+  // base: mode === 'development' ? '/' : '/SmartVaultsLandingPage/',
+  base: '/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
