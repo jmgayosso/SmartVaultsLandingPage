@@ -87,7 +87,7 @@ export const Header = () => {
           >
             {/* <Shield className={`w-8 h-8 mr-3 ${isScrolled ? 'text-blue-600' : 'text-blue-400'}`} /> */}
             <img
-              src="/public/images/svIcon.svg"
+              src="/images/svIcon.svg"
               alt="Smart Vaults Logo"
               className={`w-20 h-20 mr-1 mt-3 ${isScrolled ? 'filter grayscale' : ''}`}
             />

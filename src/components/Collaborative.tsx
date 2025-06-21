@@ -14,7 +14,7 @@ export const Collaborative = () => {
           </div>
 
           {/* Collaborative network visualization */}
-          <img src="/public/images/graph.png" alt="Collaborative Network" className="w-full h-auto" />
+          <img src="/images/graph.png" alt="Collaborative Network" className="w-full h-auto" />
         </div>
 
         {/* Mobile mockups */}
@@ -28,10 +28,10 @@ export const Collaborative = () => {
           
           <div className="flex justify-center gap-8 overflow-x-auto pb-4">
             {[
-              { screenShot: '/public/images/screenSV1.png', title: "Create a Smart Vault", subtitle: "Set flexible spending rules easily" },
-              { screenShot: '/public/images/screenSV2.png', title: "Choose a Vault type", subtitle: "Pick a template or create your own" },
-              { screenShot: '/public/images/screenSV3.png', title: "Set up Collaborative custody", subtitle: "For higher security, it allows to add as many contacts you want" },
-              { screenShot: '/public/images/screenSV5.png', title: "Contacts", subtitle: "Manage your contacts" }
+              { screenShot: '/images/screenSV1.png', title: "Create a Smart Vault", subtitle: "Set flexible spending rules easily" },
+              { screenShot: '/images/screenSV2.png', title: "Choose a Vault type", subtitle: "Pick a template or create your own" },
+              { screenShot: '/images/screenSV3.png', title: "Set up Collaborative custody", subtitle: "For higher security, it allows to add as many contacts you want" },
+              { screenShot: '/images/screenSV5.png', title: "Contacts", subtitle: "Manage your contacts" }
             ].map((screen, index) => (
               <div key={index} className="flex-shrink-0 w-48">
                 <div className="rounded-3xl h-96 mb-4 border border-gray-700 flex flex-col items-center overflow-hidden bg-transparent p-0">

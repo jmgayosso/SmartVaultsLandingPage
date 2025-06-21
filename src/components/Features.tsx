@@ -1,8 +1,8 @@
 
 // import { Shield, Book, Star } from "lucide-react";
-const NoRiskImages = '/public/images/icon_norisk.png';
-const EffortLess = '/public/images/icon_effortless.png';
-const Templates = '/public/images/icon_vault_templates.png';
+const NoRiskImages = '/images/icon_norisk.png';
+const EffortLess = '/images/icon_effortless.png';
+const Templates = '/images/icon_vault_templates.png';
 
 export const Features = () => {
   const features = [

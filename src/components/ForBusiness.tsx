@@ -9,7 +9,7 @@ export const ForBusiness = () => {
           <div className="bg-gray-200 rounded-xl lg:rounded-2xl h-48 lg:h-64 flex items-center justify-center order-2 lg:order-1">
             {/* <span className="text-gray-500 text-base lg:text-lg text-center px-4">Business Meeting Image</span> */}
             <img
-              src="/public/images/genericTeam.avif"
+              src="/images/genericTeam.avif"
               alt="Business Meeting"
               className="w-full h-full object-cover rounded-xl lg:rounded-2xl"
             />

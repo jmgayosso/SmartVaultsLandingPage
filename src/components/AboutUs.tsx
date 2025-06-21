@@ -15,7 +15,7 @@ export const AboutUs = () => {
         <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl h-100 mb-12 flex items-center justify-center">
           {/* <span className="text-white text-xl font-bold">Smart Vaults Team</span> */}
           <img 
-            src="/public/images/team.avif" 
+            src="/images/team.avif" 
             alt="Smart Vaults Team" 
             className="w-full h-full object-cover rounded-2xl"
           />
